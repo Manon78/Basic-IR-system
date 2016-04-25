@@ -184,7 +184,13 @@ sorted_posting_lst = sort_posting_lst(posting_lst) # this optimises the number o
 
 final_intersection_list, total_count = multiple_intersection(sorted_posting_lst) # the list of lines in which the terms of the query occur together is printed and returned. The number of comparisons made to find the results is also printed and returned.
 
-inverse_document_frequency(terms) # The value of the IDF is not saved, only printed. The IDF value of a word is used to determine how informative it is about the texts which contain it (high IDF means high information value). It is used for ranking query results according to their relevance for the user. To complete the IR system, query ranking needs to be returned.
+inverse_document_frequency(terms) # The value of the IDF is not saved, only printed. 
+'''
+The IDF value of a word is used to determine how informative it is about the texts which contain it 
+(high IDF means high information value). 
+It is used for ranking query results according to their relevance for the user. 
+To complete the IR system, query ranking needs to be returned, along with the lines corresponding to posting numbers.
+'''
 
 
 
